@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url("/static/img/frontend.jpg");
+            background-position: center 0px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <div class="container main-text">
+        <h1 class="fw-bolder text-warning">
+            Manage your employees in the best way
+        </h1>
+        <a href="{% url 'add-employee' %}" class="btn btn-outline-warning rounded-5 fw-bolder">Let's get started</a>
+    </div>
+{% endblock content %}
